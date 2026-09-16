@@ -1,6 +1,8 @@
 # *This project has been created as part of the 42 curriculum by mchanlia, tgomez-f, dpaiva, chdoe and chlimous.*
 
-<!-- ![Docker.png](docker.png) -->
+![Home](GithubPng/Home.png)
+![Products](GithubPng/Products.png)
+![Stripe](GithubPng/Stripe.png)
 
 # **Program Name** : ['TheGoodCorner']
 
