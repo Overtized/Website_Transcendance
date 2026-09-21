@@ -12,7 +12,10 @@ const itemsPerPage = 12;
 
 function Products() {
     const { t } = useLingui();
-    const products = useProductStore((state) => state.products);
+    const products = useProductStore((state) => state.fetchProducts);
+	useEffect(() => {
+       fetchProducts();
+	}, [fetchProducts]);
     const loading = useProductStore((state) => state.loading);
     const filters = useProductStore((state) => state.filters);
     const setFilters = useProductStore((state) => state.setFilters);
@@ -35,6 +38,7 @@ function Products() {
     useEffect(() => {
         setItemOffset(0);
     }, [filters]);
+	
 
     const endOffset = itemOffset + itemsPerPage;
     const currentItems = filteredProducts.slice(itemOffset, endOffset);
